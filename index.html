@@ -11,11 +11,11 @@
 
 <body>
   <main class="main">
-    <div class="main__inicio">
-      <section class="main__inicio__user">
+    <div class="main__Usuario">
+      <section class="main__Usuario__user">
         <div>
-          <img id="imagenUsuario" src="/assets/calavera.jpeg" alt="cuscus">
-          <h2><span>cuscu</span></h2>
+          <img class="imagenUsuario" src="/assets/calavera.jpeg">
+          <h2><span>CUSCUS</span></h2>
         </div>
 
         <h1><span>UNIVERSE MUSIC </span></h1>
@@ -26,150 +26,143 @@
           <button><img src="/assets/onoff.svg"></button>
         </div>
       </section>
-  
-
-    <!--panel d busqueda-->
-    <section main__buscar>
-      <div>
-        <imput tipe="tex" placeholder="Buscar">
-          <button><img src="assets/buscador.svg" alt=""></button>
-      </div>
-    </section>
-
-    <!--contenedor musica en reproduccion-->
-    <section main__reproduction>
-      <div class="reproduccion__actual">
-        <div>
-          <img src="assets/principal.jpg" alt="container__img"> <!--para el cambio del album-->
-        </div>
-
-        <h2 class="main__reproduccion__actual__song">Lookin for me</h2>
-        <h3 class="main__reproduccion__actual__artist">Draco</h3>
-        <imput type="range" value="20" min=0 class="music_level" />
-
-        <div class="audio-duracion">
-          <div class="star">00:01 </div>
-          <div class="end">04:30</div>
-
-        </div>
-
-      </div>
-
-    </section>
-
-    <!--botones del reproductor-->
-    <section>
-      <div> 
-      <div class="main__reproductor">
-        <button id="like"> like</button>
-        <button id="secuencia">iniciar secuencia</button>
-        <button id="aleatoria">generar aleatoria</button>
-      </div>
-      <div>
-        <button id="prev">anterior</button>
-        <button id="play">reproducir</button>
-        <button id="next">siguiente</button>
-      </div>
-      <div>
-        <button id="compartir">compartir</button>
-        <button id="guardar">guardar </button>
-
-      </div>
-
-      </div>
     </div>
-    </section>
 
+      <!--panel d busqueda-->
+        <div main__buscar>
+          <imput tipe="tex" placeholder="Buscar">
+            <button><img src="assets/buscador.svg" alt=""></button>
+        </div>
+      
+      <!--contenedor musica en reproduccion-->
+        <div class="main__reproduccion">
+        
+            <img src="assets/principal.jpg" alt="container__img"> <!--para el cambio del album-->
+          
+
+          <h2 class="main__reproduccion__song">Lookin for me</h2>
+          <h3 class="main__reproduccion__artist">Draco</h3>
+          <imput type="range" value="20" min=0 class="music_level" />
+
+          <div class="main__reproduccion__duracion">
+            <div class="star">00:01 </div>
+            <div class="end">04:30</div>
+
+          </div>
+
+        </div>
+
+    
+      <!--botones del reproductor-->
+    
+        <div main__button>
+          <div class="main__button__1">
+            <button><img src="/assets/corazon.svg"></button>
+
+            <button><img src="/assets/Vector (13).svg"></button>
+            
+            <button><img src="assets/aleatoreo.svg"></button>
+          </div>
+          <div class="main__button__2">
+            <button><img src="assets/anterior.svg"></button>
+              <button><img src="assets/play.svg"></button>
+                <button><img src="assets/siguiente.svg"></button> 
+          </div>
+          <div class="main__button__3">
+            <button><img src="assets/compartir.svg"></button>
+              <button><img src="assets/guardar.svg"></button>
+
+          </div>
+
+        </div>
+  
 
     <!--panel de musica-->
-    <section class="main__list">
+    <div class="main__list">
       <h3>List</h3>
-  
+
       <div><img src="assets/atras.svg" alt=""></div> <!--flecha atras-->
 
       <div id="track-List">
-    <!--1-->
-      <div class="song">
-        <img src="/assets/disco.jpg">
-        <h2>La Gozadera</h2>
-        <h4>Mix</h4>
-      </div>
-    <!--2-->
-      <div>
-        <img src="/assets/solista1.jpg">
-        <h2>Como tu</h2>
-        <h4>Juanjo</h4>
-      </div>
-    <!--3-->
-      <div>
-        <img src="/assets/rockero.jpg">
-        <h2>Rock and run</h2>
-        <h4>Juanjo</h4>
-      </div>
-    <!--4-->
-      <div>
-        <img src="/assets/solista2.jpg">
-        <h2>Diluvio</h2>
-        <h4>Rauw Alejandro</h4>
-      </div>
-    <!--5-->
-      <div>
-        <img src="/assets/chica.jpg">
-        <h2>Princesita De</h2>
-        <h4>Lucky brown</h4>
-      </div>
+        <!--1-->
+        <div class="song">
+          <img src="/assets/disco.jpg">
+          <h2>La Gozadera</h2>
+          <h4>Mix</h4>
+        </div>
+        <!--2-->
+        <div>
+          <img src="/assets/solista1.jpg">
+          <h2>Como tu</h2>
+          <h4>Juanjo</h4>
+        </div>
+        <!--3-->
+        <div>
+          <img src="/assets/rockero.jpg">
+          <h2>Rock and run</h2>
+          <h4>Juanjo</h4>
+        </div>
+        <!--4-->
+        <div>
+          <img src="/assets/solista2.jpg">
+          <h2>Diluvio</h2>
+          <h4>Rauw Alejandro</h4>
+        </div>
+        <!--5-->
+        <div>
+          <img src="/assets/chica.jpg">
+          <h2>Princesita De</h2>
+          <h4>Lucky brown</h4>
+        </div>
       </div>
 
       <div>
         <img src="/assets/seguir.svg" alt="">
       </div>
-    </section>
+    </div>
 
     <!--panel de musica recomendado-->
-    <section class="main__recomend">
+    <div class="main__recomend">
       <h3>New</h3>
       <div><img src="assets/atras.svg" alt=""></div> /*flecha atras*/
       <div class="main__recomend__songs">
-    <!--1-->
-      <div>
-        <img src="/assets/trompetista.jpg">
-        <h2>La Casa no es igual</h2>
-        <h4>Melendi</h4>
+        <!--1-->
+        <div>
+          <img src="/assets/trompetista.jpg">
+          <h2>La Casa no es igual</h2>
+          <h4>Melendi</h4>
+        </div>
+        <!--2-->
+        <div>
+          <img src="/assets/chicasolist.jpg">
+          <h2>Blanco y Negro</h2>
+          <h4>Malu</h4>
+        </div>
+        <!--3-->
+        <div>
+          <img src="/assets/Frame 2.jpg">
+          <h2>Thunder</h2>
+          <h4>Imagine Dragons</h4>
+        </div>
+        <!--4-->
+        <div>
+          <img src="/assets/disco2.jpg">
+          <h2>Cardio Mix</h2>
+          <h4>Playlist</h4>
+        </div>
+        <!--5-->
+        <div>
+          <img src="/assets/chicas.jpg">
+          <h2>Cardio Mix</h2>
+          <h4>Playlist</h4>
+        </div>
       </div>
-    <!--2-->
+
       <div>
-        <img src="/assets/chicasolist.jpg">
-        <h2>Blanco y Negro</h2>
-        <h4>Malu</h4>
+        <img src="/assets/seguir.svg" alt="">
       </div>
-    <!--3-->
-      <div>
-        <img src="/assets/Frame 2.jpg">
-        <h2>Thunder</h2>
-        <h4>Imagine Dragons</h4>
-      </div>
-    <!--4-->
-      <div>
-        <img src="/assets/disco2.jpg">
-        <h2>Cardio Mix</h2>
-        <h4>Playlist</h4>
-      </div>
-    <!--5-->
-      <div>
-        <img src="/assets/chicas.jpg">
-        <h2>Cardio Mix</h2>
-        <h4>Playlist</h4>
-      </div>
+
     </div>
-      
-    <div>
-      <img src="/assets/seguir.svg" alt="">
-      </div>
-    
-    </section>
-
-
-
 
 
   </main>

@@ -1,4 +1,4 @@
-*{
+*{ /*limpieza de pagina*/
     margin: unset;
     padding: unset;
     outline: unset;
@@ -12,13 +12,37 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
 }
+/*diseño de pagina*/
+body{
+    background-color:#1f1f1f;
+}
+/*usuario*/
+.main__Usuario{
+    display: flex;
+    align-items: center;
+}
+
+.imagenUsuario {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.nombreUsuario{
+    font-weight: bold;
+    color: aliceblue;
+}
 /*botones reproductor*/
-.main__reproductor {
+.main__button {
     display:flex;
     flex-direction: column;
     align-items: center;
     width: 300px;
     margin: 0;
+    background-color: #1f1f1f;
+    color: #f1f1f1;
+    box-shadow: 2px 2px 5px rgba(255, 255, 255, 0.5);
+    
 }
 
 .controles {
