@@ -7,33 +7,32 @@
      classic, merengue,salsa, lista,genero, vocalista,instrumento ">
   <title>reproductor</title>
   <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 </head>
 
 <body class="body">
+
+  <header class="header">
+
+    <div class=header__cabecera>
+      <img src="/assets/Ellipse 1.png">
+      <h2>CUSCUS</h2>
+    </div>
+    <h1 class="header__texto">UNIVERSE MUSIC </h1>
+    <div class="header__buttons">
+      <button><img src="/assets/campana.svg"></button>
+
+      <button><img src="/assets/onoff.svg"></button>
+    </div>
+
+  </header>
   <main class="main">
-      <div class="main__Usuario">
-
-        <div class=main__usuario__cabecera>
-          <img src="/assets/Ellipse 1.png">
-          <h2>CUSCUS</h2>
-        </div>
-          <h1 class="main__usuario__texto">UNIVERSE MUSIC </h1>
-        
-
-        <div class="main__usuario__button">
-          <button><img src="/assets/campana.svg"></button>
-
-          <button><img src="/assets/onoff.svg"></button>
-        </div>
-      </div>
 
     <!--panel d busqueda-->
-    <div>
-      <form action="" class="Buscar">
-        <imput tipe="tex" placeholder="Buscar"></imput>
-      </form>
-        <button><img src="assets/buscador.svg" alt=""></button>
-    </div>
+    <form action="" class="Buscar">
+      <imput tipe="tex" placeholder="Buscar"></imput>
+      <button><img src="assets/buscador.svg" alt=""></button>
+    </form>
 
     <!--contenedor musica en reproduccion-->
     <div class="main__reproduccion">
@@ -84,37 +83,8 @@
 
       <div><img src="assets/paatras.svg" alt=""></div> <!--flecha atras-->
 
-      <div id="track-List">
-        <!--1-->
-        <div class="songs">
-          <img src="/assets/Frame 2.png">
-          <h2>La Gozadera</h2>
-          <h4>Mix</h4>
-        </div>
-        <!--2-->
-        <div>
-          <img src="/assets/juanjo.png">
-          <h2>Como tu</h2>
-          <h4>Juanjo</h4>
-        </div>
-        <!--3-->
-        <div>
-          <img src="/assets/rock.png">
-          <h2>Rock and run</h2>
-          <h4>Juanjo</h4>
-        </div>
-        <!--4-->
-        <div>
-          <img src="/assets/chicogui.png">
-          <h2>Diluvio</h2>
-          <h4>Rauw Alejandro</h4>
-        </div>
-        <!--5-->
-        <div>
-          <img src="/assets/princesa.png">
-          <h2>Princesita De</h2>
-          <h4>Lucky brown</h4>
-        </div>
+      <div id="track-list">
+
       </div>
 
       <div>
