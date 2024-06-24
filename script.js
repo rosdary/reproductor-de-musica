@@ -1,26 +1,25 @@
 axios.get('https://leonardoapi.onrender.com/songs')
-.them ((res)=>{
+.then((res)=>{
     //guardo la lista de canciones
-    const songList =res.data.songs
+    const songList = res.data.songs
 
-    const trackList = document.getElementById
+    const trackList = document.getElementById('track-list')
 
     //recorriendo lista
     songList.map((song)=>{
         
-      /*  const div = document.createElement('div')
-        div.classList.add(song)
-        div.innerHTML ='
-         <img src="${song.pat.font}" 
-         <h2>${song.title}</h2>
-         <h4>${song.autor}</h4>'
-    
-    
+        const div = document.createElement('div')
+        div.classList.add('songs')
+        div.innerHTML =`
+            <img src="${song.path.front}">
+            <h2>${song.title}</h2>
+            <h4>${song.author}</h4>
+        `    
         trackList.appendChild(div)
-        console.long(songList)*/
     })
 
 })
+
 const tipoNumber = 2024
 const tipoString = 'instituto alfa carabobo'
 const tipoBoolean =false
