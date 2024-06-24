@@ -30,7 +30,6 @@
     align-items: center;
 }
 .main__usuario__cabecera {
-    box-shadow: -9px -9px 16px rgba(255, 255, 255, 0.5), 9px 9px 16px rgba(163, 177, 196, 0);
     padding: 10px 40px;
     gap: 20px;
     text-align: center;
@@ -65,7 +64,6 @@
 
 .buscar {
     background-color: #4a4141;
-    box-shadow: 5px 5px 5px rgba(255, 255, 255, 0.5);
     width: 20%;
     justify-content: center;
     display: flex;
@@ -91,19 +89,15 @@
     align-items: center;
     gap: 800px;
     color: #f1f1f1;
-    flex direction: column;
 
 }
 .main__button {
     display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
-    margin-bottom:25px;
-    background-color: #1f1f1f;
-    color: #f1f1f1;
-    box-shadow: 2px 2px 5px rgba(255, 255, 255, 0.5);
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
+    padding: auto;
+    background-color: #f2f2f2;
 }
 
 .main__button__1 {
