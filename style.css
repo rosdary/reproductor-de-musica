@@ -93,7 +93,7 @@
 }
 .main__button {
     display: flex;
-    flex-direction: column;
+
     justify-content: space-between;
     align-items: center;
     padding: auto;
@@ -123,12 +123,15 @@
     flex-direction: center;
     justify-content: center;
     width: 100%;
-    color: #f2f2f2;
     gap: 50px;
 }
 
 /*listas*/
-.main__list{
+.main__list h3 {
     display: flex;
     flex-direction:column;
+    color: aqua;
+    font-size: 16;
+    font-weight: bold;
+
 }
