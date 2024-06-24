@@ -1,65 +1,111 @@
-*{ /*limpieza de pagina*/
+* {
+    /*limpieza de pagina*/
     margin: unset;
     padding: unset;
-    outline: unset;
     border: unset;
-
     box-sizing: border-box;
-    display: block;
+}
 
+/*diseño de pagina*/
+.body {
     font-size: 1rem;
+    list-style: none;
     font-weight: 400;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
 }
-/*diseño de pagina*/
-.main{
+
+.main {
     width: 100%;
-    background-color:#1f1f1f;
-}
-/*usuario*/
-.main__Usuario{
-    display: flex;
-    align-items: center;
+    padding: auto;
+    background-color: #1f1f1f;
 }
 
-.imagenUsuario {
-    width: 56px;
-    height: 56px;
-    border-radius: 50%;
-    margin-right: 10px;
+
+.main__usuario{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
-.nombreUsuario{
+.main__usuario__cabecera {
+    box-shadow: -9px -9px 16px rgba(255, 255, 255, 0.5), 9px 9px 16px rgba(163, 177, 196, 0);
+    padding: 10px 40px;
+    gap: 20px;
+    text-align: center;
+    justify-content: space-between;
+    border-radius: 12%;
+}
+
+.main__usuario__cabecera h2 {
+    color: #f1f1f1;
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
     font-weight: bold;
-    color: aliceblue;
 }
+
+.main__usuario__texto {
+    color: #f1f1f1;
+    font-size: 32;
+    font-weight: bold;
+    text-align: center;
+
+}
+
+.Usuario__button {
+    display: flex;
+    background-color: #8f4a4a;
+    color: #7c0c0c;
+
+}
+
+.buscar {
+    background-color: #f1f1f1;
+    box-shadow: 5px 5px 5px rgba(255, 255, 255, 0.5);
+    width: 20%;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: #1f1f1f;
+
+}
+
 /*botones reproductor*/
 .main__button {
-    display:flex;
+    display: flex;
     flex-direction: column;
     align-items: center;
-    width: 300px;
-    margin: 0;
+    width: 95px;
+    margin-bottom:25px;
     background-color: #1f1f1f;
     color: #f1f1f1;
     box-shadow: 2px 2px 5px rgba(255, 255, 255, 0.5);
-    
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
 }
 
-.controles {
+.main__button__1 {
     display: flex;
-    justify-content: space-around;
+    flex-direction: center;
+    justify-content: center;
     width: 100%;
 }
 
-button{
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
+
+.main__button__2 {
+    display: flex;
+    flex-direction: center;
+    justify-content: center;
+    width: 100%;
 }
 
-
-imput[type="range"] {
+.main__button__3 {
+    display: flex;
+    flex-direction: center;
+    justify-content: center;
     width: 100%;
-    margin: 1opx;
 }
