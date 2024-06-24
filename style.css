@@ -40,7 +40,6 @@
 
 .main__usuario__cabecera h2 {
     color: #f1f1f1;
-    display: flex;
     flex-direction: column;
     font-size: 16px;
     font-weight: bold;
@@ -54,31 +53,50 @@
 
 }
 
-.Usuario__button {
+.main__Usuario__button {
     display: flex;
-    background-color: #8f4a4a;
-    color: #7c0c0c;
+    align-items: center;
+    justify-content: center;
+    background-color: #1f1f1f;
+    color:#f2f2f2;
+    gap: 50px;
 
 }
 
 .buscar {
-    background-color: #f1f1f1;
+    background-color: #4a4141;
     box-shadow: 5px 5px 5px rgba(255, 255, 255, 0.5);
     width: 20%;
     justify-content: center;
     display: flex;
-    flex-direction: row;
     align-items: center;
     color: #1f1f1f;
 
 }
 
 /*botones reproductor*/
-.main__button {
+
+.main__reproduccion{
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     align-items: center;
-    width: 95px;
+    padding: auto;
+    color: #f2f2f2;
+    
+}
+.reproduccion{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 800px;
+    color: #f1f1f1;
+    flex direction: column;
+
+}
+.main__button {
+    display: flex;
+    align-items: center;
     margin-bottom:25px;
     background-color: #1f1f1f;
     color: #f1f1f1;
@@ -91,8 +109,10 @@
 .main__button__1 {
     display: flex;
     flex-direction: center;
-    justify-content: center;
+    gap: 50px;
     width: 100%;
+    justify-content: center;
+
 }
 
 
@@ -101,6 +121,7 @@
     flex-direction: center;
     justify-content: center;
     width: 100%;
+    gap: 50px;
 }
 
 .main__button__3 {
@@ -108,4 +129,12 @@
     flex-direction: center;
     justify-content: center;
     width: 100%;
+    color: #f2f2f2;
+    gap: 50px;
+}
+
+/*listas*/
+.main__list{
+    display: flex;
+    flex-direction:column;
 }
