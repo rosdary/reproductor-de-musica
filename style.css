@@ -56,17 +56,24 @@
     transform: background .3s ease-in;
 
 }
-.header__buttons:hover{
-    border-color: #1f1f1f88;
-}
+
 .campana{
     box-shadow: -2px -2px 5px rgba(255, 255, 255, 0.096);
     border-radius: 12%;
-
+    background-color: #1f1f1f;
+    color:#f2f2f2;
+    padding: 10px 10px;
+    transition: background .3s ease-in;
+}
+.header__buttons:hover{
+    color: aqua;
 }
 .off{
     box-shadow: -2px -2px 5px rgba(255, 255, 255, 0.096);
     border-radius: 12%;
+    background-color: #1f1f1f;
+    color:#f2f2f2;
+    padding: 10px 10px;
 }
 
 .main {
@@ -78,7 +85,6 @@
 
 .buscar {
     background-color: #4a4141;
-    width: 20%;
     justify-content: center;
     display: flex;
     align-items: center;
@@ -107,38 +113,67 @@
 }
 .main__button {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    background-color: #f2f2f2;
-    padding: auto;
-    gap: 50px;
-}
+    gap: 150px;
+    padding: 10px 10px;
+    box-shadow: -2px -2px 5px rgba(255, 255, 255, 0.096);
+    border-radius: 10%;
 
-.main__button__1 {
+}
+  .main__button__1{
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 10px;
+  }
+.corazon {
     background-color: #1f1f1f;
     color:#f2f2f2;
-    gap: 50px;
-
+}
+.orden {
+    background-color: #1f1f1f;
+    color:#f2f2f2;
+}
+.aleatoreo {
+    background-color: #1f1f1f;
+    color:#f2f2f2;
+}
+.main__button__2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
 }
 
-
-.main__button__2 {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 50px;
-
+.m-anterior{
+    background-color: #1f1f1f;
+    color:#f2f2f2;
 }
 
-.main__button__3 {
+.play{
+    background-color: #1f1f1f;
+    color:#f2f2f2;
+}
+
+.m-siguiente{
+    background-color: #1f1f1f;
+    color:#f2f2f2;
+}
+.main__button__3{
+    display: flex;
     align-items: center;
-    flex-direction: column;
     justify-content: center;
-    width: 100%;
-    gap: 50px;
+    gap: 10px;
+}
+
+.compartir{
+    background-color: #1f1f1f;
+    color:#f2f2f2;
+}
+.guardar{
+    background-color: #1f1f1f;
+    color:#f2f2f2;
 }
 
 /*listas*/
@@ -156,7 +191,7 @@
     padding: 10px 80px;
     flex-direction: row;
     justify-self: center;
-    align-items: end;
+    
 }
 
 .avanza {
