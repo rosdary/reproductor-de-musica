@@ -52,7 +52,12 @@
     background-color: #1f1f1f;
     color:#f2f2f2;
     gap: 50px;
+    font-weight: bold;
+    transform: background .3s ease-in;
 
+}
+.header__buttons:hover{
+    border-color: #1f1f1f88;
 }
 
 .main {
@@ -93,34 +98,35 @@
 }
 .main__button {
     display: flex;
-
     justify-content: space-between;
     align-items: center;
-    padding: auto;
     background-color: #f2f2f2;
+    padding: auto;
+    gap: 50px;
 }
 
 .main__button__1 {
     display: flex;
-    flex-direction: center;
-    gap: 50px;
-    width: 100%;
+    align-items: center;
     justify-content: center;
+    background-color: #1f1f1f;
+    color:#f2f2f2;
+    gap: 50px;
 
 }
 
 
 .main__button__2 {
-    display: flex;
-    flex-direction: center;
+    flex-direction: column;
     justify-content: center;
-    width: 100%;
+    align-items: center;
     gap: 50px;
+
 }
 
 .main__button__3 {
-    display: flex;
-    flex-direction: center;
+    align-items: center;
+    flex-direction: column;
     justify-content: center;
     width: 100%;
     gap: 50px;
@@ -130,9 +136,11 @@
 .main__list h3 {
     display: flex;
     flex-direction:column;
+    align-items: start;
     color: aqua;
-    font-size: 16;
+    font-size: 20;
     font-weight: bold;
+    padding: 10px 120px;
 
 }
 
@@ -140,9 +148,44 @@
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
     gap: 10px;
-    padding: 10px 60px;
+    padding: 10px 130px;
+    color: #f1f1f1;
+    text-align: center;
+    font: size 16px;
 }
 
 .songs img {
     width: 100%;
 }
+/* panel recomendado*/
+.main__recomend h3 {
+    display: flex;
+    flex-direction:column;
+    align-items: start;
+    color: rgb(210, 243, 101);
+    font-size: 16;
+    font-weight: bold;
+    padding: 10px 120px;
+}
+.main__recomend__songs {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 33px;
+    padding: 10px 130px;
+}
+
+.main__recomend__songs h2{
+    color: #f1f1f1;
+    font-size: 16px;
+    font-weight: bold;  
+    text-align: center;
+}
+.main__recomend__songs h4{
+    color: #f1f1f1;
+    font-size: 12px;
+    font-weight:lighter; 
+    text-align: center;
+    
+}
+
+
