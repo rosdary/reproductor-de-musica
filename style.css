@@ -59,6 +59,15 @@
 .header__buttons:hover{
     border-color: #1f1f1f88;
 }
+.campana{
+    box-shadow: -2px -2px 5px rgba(255, 255, 255, 0.096);
+    border-radius: 12%;
+
+}
+.off{
+    box-shadow: -2px -2px 5px rgba(255, 255, 255, 0.096);
+    border-radius: 12%;
+}
 
 .main {
     width: 100%;
@@ -143,6 +152,16 @@
     padding: 10px 120px;
 
 }
+.atras{
+    padding: 10px 80px;
+    flex-direction: row;
+    justify-self: center;
+    align-items: end;
+}
+
+.avanza {
+    padding: 10px 80px;
+}
 
 #track-list {
     display: grid;
@@ -158,6 +177,7 @@
     width: 100%;
 }
 /* panel recomendado*/
+    
 .main__recomend h3 {
     display: flex;
     flex-direction:column;
