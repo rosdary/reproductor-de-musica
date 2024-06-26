@@ -15,9 +15,14 @@ axios.get('https://leonardoapi.onrender.com/songs')
             <h2>${song.title}</h2>
             <h4>${song.author}</h4>
         `    
+      div.addEventListener('click',()=>{
+        //lo q ya escribi aqui sucede cuando pase el evento
+        alert(song.title)
+    })
+   
         trackList.appendChild(div)
     })
-
+   
 })
 
 const tipoNumber = 2024
