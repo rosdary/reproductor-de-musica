@@ -63,17 +63,22 @@
     background-color: #1f1f1f;
     color:#f2f2f2;
     padding: 10px 10px;
-    transition: background .3s ease-in;
+    transition: background 3s ease-in;
 }
-.header__buttons:hover{
-    color: aqua;
+.campana:hover{
+    background-color: #1f1f1fa2;
 }
+
 .off{
     box-shadow: -2px -2px 5px rgba(255, 255, 255, 0.096);
     border-radius: 12%;
     background-color: #1f1f1f;
     color:#f2f2f2;
     padding: 10px 10px;
+    transition: background 3s ease-in;
+}
+.off:hover{
+    background-color: #1f1f1f9e;
 }
 
 .main {
@@ -81,14 +86,13 @@
     padding: auto;
 }
 
-
-
-.buscar {
-    background-color: #4a4141;
+.buscar__1 {
+    background-color: #1f1f1f;
     justify-content: center;
     display: flex;
     align-items: center;
-    color: #1f1f1f;
+    color: #f1f1f1;
+    padding: 10px 130px;
 
 }
 
@@ -125,55 +129,113 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 10px;
+    gap: 15px;
   }
+  
 .corazon {
-    background-color: #1f1f1f;
-    color:#f2f2f2;
+    padding: 12px 12px;
+    background-color:#1f1f1f;
+    color:aqua;
+    transition: background  .3s ease-in;
+    border-radius: 10%;
+}
+.corazon:hover{
+    background-color:rgba(0, 255, 255, 0.16);
+
 }
 .orden {
+    padding: 12px 12px;
     background-color: #1f1f1f;
     color:#f2f2f2;
+    transition: background  .3s ease-in;
+    border-radius: 10%;
+}
+.orden:hover{
+    background-color:rgba(0, 255, 255, 0.16);
 }
 .aleatoreo {
+    padding: 12px 12px;
     background-color: #1f1f1f;
     color:#f2f2f2;
+    transition: background  .3s ease-in;
+    border-radius: 10%;
+}
+.aleatoreo:hover{
+    background-color:rgba(0, 255, 255, 0.16);
+
 }
 .main__button__2{
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 10px;
+    gap: 15px;
 }
 
 .m-anterior{
     background-color: #1f1f1f;
     color:#f2f2f2;
+    padding: 12px 12px;
+    transition: background  .3s ease-in;
+    border-radius: 10%;
+
+}
+.m-anterior:hover{
+    background-color:rgba(0, 255, 255, 0.16);
 }
 
 .play{
     background-color: #1f1f1f;
     color:#f2f2f2;
+    padding: 12px 12px;
+    transition: background  .3s ease-in;
+    border-radius: 10%;
+}
+.play:hover{
+    background-color:rgba(0, 255, 255, 0.16);
 }
 
 .m-siguiente{
     background-color: #1f1f1f;
     color:#f2f2f2;
+    padding: 12px 12px;
+    transition: background  .3s ease-in;
+    border-radius: 10%;
 }
+
+.m-siguiente:hover{
+    background-color:rgba(0, 255, 255, 0.16);
+
+}
+
 .main__button__3{
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 10px;
+    gap: 15px;
 }
 
 .compartir{
-    background-color: #1f1f1f;
-    color:#f2f2f2;
+    background-color:#1f1f1f;
+    color:aqua;
+    padding: 12px 12px;
+    transition: background  .3s ease-in;
+    border-radius: 10%;
+}
+
+.compartir:hover{
+    background-color:rgba(0, 255, 255, 0.16);
+
 }
 .guardar{
     background-color: #1f1f1f;
     color:#f2f2f2;
+    padding: 12px 12px;
+    transition: background  .3s ease-in;
+    border-radius: 10%;
+}
+.guardar:hover{
+    background-color:rgba(0, 255, 255, 0.16);
+
 }
 
 /*listas*/
@@ -187,15 +249,34 @@
     padding: 10px 120px;
 
 }
-.atras{
+.button-mover {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 150px;
+    padding: 10px 10px;
+    border-radius: 10%;
+}
+.button-movimiento {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 150px;
+    padding: 10px 10px;
+    border-radius: 10%;
+}
+.A-atras{
     padding: 10px 80px;
     flex-direction: row;
     justify-self: center;
+    background-color: #1f1f1f;
+    color:#f2f2f2;
     
 }
 
-.avanza {
-    padding: 10px 80px;
+.A-avanza {
+    padding: 10px 80px; background-color: #1f1f1f;
+    color:#f2f2f2;
 }
 
 #track-list {
@@ -240,7 +321,7 @@
     font-size: 12px;
     font-weight:lighter; 
     text-align: center;
-    
 }
+
 
 
