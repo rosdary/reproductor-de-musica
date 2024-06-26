@@ -109,7 +109,7 @@
 
 }
 
-/*botones reproductor*/
+/*contenedor reproductor*/
 
 .main__reproduccion{
     display: flex;
@@ -128,15 +128,20 @@
     color: #f1f1f1;
 
 }
+/* botones del reproductor */
 .main__button {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 150px;
-    padding: 10px 10px;
+    padding: 10px 100px;
     box-shadow: -2px -2px 5px rgba(255, 255, 255, 0.096);
     border-radius: 10%;
+    width: 50%;
 
+}
+.main__button:hover{
+    background: #f2f2f287;
 }
   .main__button__1{
     display: flex;
