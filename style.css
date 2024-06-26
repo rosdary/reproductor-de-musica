@@ -85,6 +85,9 @@
 .main {
     width: 100%;
     padding: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
 /*buscador*/
 .buscar{
@@ -137,7 +140,9 @@
     padding: 10px 100px;
     box-shadow: -2px -2px 5px rgba(255, 255, 255, 0.096);
     border-radius: 10%;
-    width: 50%;
+    width: min-content;
+    margin: 0 auto;
+    /* width: 50%; */
 
 }
 .main__button:hover{
@@ -265,35 +270,24 @@
     padding: 30px 120px;
 
 }
-.button-mover {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 150px;
-    padding: 10px 10px;
-    border-radius: 10%;
-}
-.button-mover__atras{
-    padding: 10px 80px;
-    justify-self: center;
-    align-items: center;
-    background-color: #1f1f1f;
-    color:#f2f2f2;
-    
-}
+.button-mover,
 .button-movimiento {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 150px;
-    padding: 10px 10px;
+    /* padding: 10px 10px; */
     border-radius: 10%;
 }
-.button-movimiento__avanza {
-    padding: 10px 80px; background-color: #1f1f1f;
+.button-mover__atras,
+.button-movimiento__avanza{
+    padding: 10px 30px;
+    justify-self: center;
+    align-items: center;
+    background-color: #1f1f1f;
     color:#f2f2f2;
+    
 }
 .main__list{
     display: flex;
@@ -303,22 +297,35 @@
 }
 
 #track-list {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
     gap: 10px;
     padding: 10px 10px;
     color: #f1f1f1;
     text-align: center;
-    font: size 16px;
+    font-size: 16px;
     display: flex;
-    flex-direction:row-reverse;
-
+    overflow-y: auto;
+    /* flex-direction:row-reverse; */
+    flex-grow: 1;
     
 }
-
-.songs img {
-    width: 100%;
+#track-list .songs  {
+    width: 120px;
+    display: flex;
+    flex-direction: column;
 }
+#track-list .songs h2 {
+    font-size: 1.2rem;
+    line-height: 100%;
+    margin-bottom: 12px;
+}
+#track-list .songs h4 {
+    font-size: 1rem;
+    line-height: 100%;
+    font-weight: 400;
+    opacity: .6;
+    margin-bottom: 12px;
+}
+
 /* panel recomendado*/
 .main__recomend{
     display: flex;
