@@ -239,9 +239,8 @@
 }
 
 /*listas*/
-.main__list h3 {
+.list h3 {
     display: flex;
-    flex-direction:column;
     align-items: start;
     color: aqua;
     font-size: 20;
@@ -279,16 +278,22 @@
     padding: 10px 80px; background-color: #1f1f1f;
     color:#f2f2f2;
 }
-
+.main__list{
+    display: flex;
+    padding: 20px 20px;
+}
 
 #track-list {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
     gap: 10px;
-    padding: 10px 130px;
+    padding: 10px 10px;
     color: #f1f1f1;
     text-align: center;
     font: size 16px;
+    display: flex;
+    flex-direction:row-reverse;
+
     
 }
 
@@ -298,11 +303,12 @@
 /* panel recomendado*/
 .main__recomend{
     display: flex;
+    padding: 20px 20px;
     box-shadow: -2px -2px 5px rgba(255, 255, 255, 0.096);
 
-
+   
 }
-.main__recomend h3 {
+.recomend h3 {
     display: flex;
     flex-direction:column;
     align-items: start;
@@ -316,6 +322,7 @@
     grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
     gap: 33px;
     padding: 10px 130px;
+    display: flex;
     flex-direction:row-reverse;
 }
 
