@@ -37,17 +37,18 @@
     <!--contenedor musica en reproduccion-->
     <div class="main__reproduccion">
 
-      <img src="assets/reproduccion.png" alt="container__img"> <!--para el cambio del album-->
+      <img src="assets/reproduccion.png" alt="container__img" id = 'portada'> <!--para el cambio del album-->
 
 
-      <h2 class="main__reproduccion__song">Lookin for me</h2>
-      <h3 class="main__reproduccion__artist">Draco</h3>
+      <h2 class="main__reproduccion__song" id="titulo">Lookin for me</h2>
+      <h3 class="main__reproduccion__artist" id="autor">Draco</h3>
       <imput type="range" value="20" min=0 class="music_level" />
 
       <div class="reproduccion">
         <div class="star">00:01 </div>
         <div class="end">04:30</div>
-
+      
+        <audio class="main__reproduccion__1" id="audio" autoplay></audio>
       </div>
 
     </div>
@@ -65,7 +66,7 @@
       </div>
       <div class="main__button__2">
         <button class="m-anterior"><img src="assets/anterior.svg"></button>
-        <button class="play"><img src="assets/play.svg"></button>
+        <button class="play" id="play"><img src="assets/play.svg"></button>
         <button class="m-siguiente"><img src="assets/siguiente.svg"></button>
       </div>
       <div class="main__button__3">
@@ -80,9 +81,9 @@
     <!--panel de musica-->
     <!-- <div class="list"> <h3>List</h3></div> -->
     <div class="main__list">
-      <div class="button-mover">
+     /* <div class="button-mover">
         <button class="button-mover__atras"><img src="assets/paatras.svg" alt=""></button>
-      </div>
+      </div>*/
       <!--flecha atras-->
 
       <div id="track-list">

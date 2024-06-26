@@ -17,8 +17,26 @@ axios.get('https://leonardoapi.onrender.com/songs')
         `    
       div.addEventListener('click',()=>{
         //lo q ya escribi aqui sucede cuando pase el evento
-        alert(song.title)
+        document.getElementById('portada').setAttribute('src',
+            song.path.front)
+
+        //alert(song.title aletra para ver si esta funcionando
+       
+        document.getElementById('titulo').innerHTML = song.title
+
+        document.getElementById('autor').innerHTML = song.author
+        const audio = document.getElementById('audio')
+        audio.setAttribute('src', song.path.audio)
+        document.getElementById('play').addEventListener('click',()=>{
+            if(audio.paused){
+                audio.play()
+            }else{
+                audio.pause()
+            }
+        })
+
     })
+
    
         trackList.appendChild(div)
     })
