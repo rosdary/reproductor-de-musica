@@ -245,7 +245,7 @@
     color: aqua;
     font-size: 20;
     font-weight: bold;
-    padding: 10px 120px;
+    padding: 30px 120px;
 
 }
 .button-mover {
@@ -281,6 +281,8 @@
 .main__list{
     display: flex;
     padding: 20px 20px;
+    box-shadow: -2px -2px 5px rgba(255, 255, 255, 0.096), 2px 2px 5px rgba(255, 255, 255, 0.096);
+
 }
 
 #track-list {
@@ -304,7 +306,8 @@
 .main__recomend{
     display: flex;
     padding: 20px 20px;
-    box-shadow: -2px -2px 5px rgba(255, 255, 255, 0.096);
+    box-shadow: -2px -2px 5px rgba(255, 255, 255, 0.096), 2px 2px 5px rgba(255, 255, 255, 0.096);
+
 
    
 }
@@ -315,7 +318,7 @@
     color: rgb(210, 243, 101);
     font-size: 16;
     font-weight: bold;
-    padding: 10px 120px;
+    padding: 30px 120px;
 }
 .main__recomend__songs {
     display: grid;
